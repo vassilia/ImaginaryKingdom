@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IMAGINARY KINGDOM</string>
+    <string name="unicorn">UNICORN</string>
+    <string name="r2p">RAINBOW (2)</string>
+    <string name="gc1p">GOLDEN CLOUDS (1)</string>
+    <string name="minotaur">MINOTAUR</string>
+    <string name="storm">STORM (-1)</string>
+    <string name="reset">NEW GAME</string>
+</resources>

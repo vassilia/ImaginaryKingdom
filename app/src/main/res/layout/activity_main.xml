@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.imaginarykingdom.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+   />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScore"
+        android:layout_marginBottom="25dp"
+        android:text="@string/reset"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/forest"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/unicorn"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/unicorn_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="addTwoForUnicorn"
+                android:text="@string/r2p"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="addOneForUnicorn"
+                android:text="@string/gc1p"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="minusOneForUnicorn"
+                android:text="@string/storm"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/minotaur"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/minotaur_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="addTwoForMinotaur"
+                android:text="@string/r2p"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="addOneForMinotaur"
+                android:text="@string/gc1p"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="minusOneForMinotaur"
+                android:text="@string/storm"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
